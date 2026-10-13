@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>isla Philippines — Find Your Next Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">isla<small>PHILIPPINES</small></a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#tours">Tour Packages</a>
+        <a href="#schedules">Schedules</a>
+        <a href="#schedules">Available Slots</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero" id="home">
+        <div>
+          <h1>A little escape.<br>A lot to discover.</h1>
+          <p class="hero-copy">Welcome to Philippines</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#tours">Explore tour packages <span aria-hidden="true">→</span></a>
+            <a class="btn" href="#destinations">Find a destination</a>
+          </div>
+          <div class="stats">
+            <span>5 destinations</span><span>10 curated tours</span><span>Clear prices &amp; schedules</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=85" alt="Beautiful tropical lagoon in the Philippines">
+          <div class="image-label"><strong>El Nido, Palawan ↗</strong><span>Limestone cliffs. Endless blue.</span></div>
+        </div>
+      </section>
+      <form class="search-panel" id="searchForm">
+        <div class="field">
+          <label for="destinationSelect">Where would you like to go?</label>
+          <select id="destinationSelect">
+            <option value="">All destinations</option>
+            <option>Manila</option><option>Cebu</option><option>Bohol</option><option>Boracay</option><option>Palawan</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="travelMonth">When are you exploring?</label>
+          <input id="travelMonth" type="month" value="2026-11">
+        </div>
+      </form>
+
+      <section id="destinations">
+        <div class="section-heading">
+          <div class="section-kicker">Five places. Your kind of journey.</div>
+          <h2>Where will you find your next story?</h2>
+          <p>Choose a destination. Each one comes with exactly two ways to explore.</p>
+        </div>
+        <div class="destination-grid">
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=600&q=80" alt="Historic destination in Manila" loading="lazy">
+            <div class="destination-content"><div class="destination-title"><h3>Manila</h3><span class="pill">2 tours</span></div><p>Walk through history</p><a class="text-link" href="#tours" data-destination="Manila">Explore destination →</a></div>
+          </article>
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Waterfall and nature in Cebu" loading="lazy">
+            <div class="destination-content"><div class="destination-title"><h3>Cebu</h3><span class="pill">2 tours</span></div><p>A little more adventure</p><a class="text-link" href="#tours" data-destination="Cebu">Explore destination →</a></div>
+          </article>
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80" alt="Green hills and countryside" loading="lazy">
+            <div class="destination-content"><div class="destination-title"><h3>Bohol</h3><span class="pill">2 tours</span></div><p>Take the scenic route</p><a class="text-link" href="#tours" data-destination="Bohol">Explore destination →</a></div>
+          </article>
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=600&q=80" alt="Sunny tropical beach" loading="lazy">
+            <div class="destination-content"><div class="destination-title"><h3>Boracay</h3><span class="pill">2 tours</span></div><p>Find your island rhythm</p><a class="text-link" href="#tours" data-destination="Boracay">Explore destination →</a></div>
+          </article>
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=600&q=80" alt="Palawan beach and palm trees" loading="lazy">
+            <div class="destination-content"><div class="destination-title"><h3>Palawan</h3><span class="pill">2 tours</span></div><p>Chase the clear blue</p><a class="text-link" href="#tours" data-destination="Palawan">Explore destination →</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tours-section" id="tours">
+        <div class="section-heading">
+          <div class="section-kicker">A few good places to start</div>
+          <h2>Make a day of it.</h2>
+          <p>Culture, adventure or a day at sea — discover a tour worth making time for.</p>
+        </div>
+        <div class="tour-grid" id="tourGrid">
+          <article class="tour-card" data-destination="Manila" data-tags="culture history heritage">
+            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=80" alt="Historic stone architecture" loading="lazy">
+            <div class="tour-content"><div class="tour-meta">Manila · 18 slots available</div><h3>Intramuros Heritage Tour</h3><p>Explore the walled city with a local guide, from Fort Santiago to cobblestone streets and centuries-old churches.</p><div class="tour-details"><span>12 Nov 2026 · 09:00</span><span>4 hours · Guided experience</span></div><div class="price">₱1,000 <span style="font-size:11px;font-weight:400;color:#7b8582">/ person</span></div><button class="btn btn-primary book-btn" type="button" data-tour="Intramuros Heritage Tour" data-price="1000" data-slots="18">View tour details</button></div>
+          </article>
+          <article class="tour-card" data-destination="Cebu" data-tags="nature adventure waterfall">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80" alt="Waterfall adventure" loading="lazy">
+            <div class="tour-content"><div class="tour-meta">Cebu · 14 slots available</div><h3>Kawasan Falls Tour</h3><p>Enjoy a guided nature day in Badian, with forest trails and time beside Kawasan's vivid blue waters.</p><div class="tour-details"><span>15 Nov 2026 · 07:00</span><span>8 hours · Guided experience</span></div><div class="price">₱2,500 <span style="font-size:11px;font-weight:400;color:#7b8582">/ person</span></div><button class="btn btn-primary book-btn" type="button" data-tour="Kawasan Falls Tour" data-price="2500" data-slots="14">View tour details</button></div>
+          </article>
+          <article class="tour-card" data-destination="Palawan" data-tags="nature island sea adventure">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80" alt="El Nido island scenery" loading="lazy">
+            <div class="tour-content"><div class="tour-meta">Palawan · 20 slots available</div><h3>El Nido Island Hopping</h3><p>Explore limestone cliffs, hidden lagoons and beaches on a scenic island-hopping experience.</p><div class="tour-details"><span>20 Nov 2026 · 08:00</span><span>6 hours · Boat tour</span></div><div class="price">₱1,800 <span style="font-size:11px;font-weight:400;color:#7b8582">/ person</span></div><button class="btn btn-primary book-btn" type="button" data-tour="El Nido Island Hopping" data-price="1800" data-slots="20">View tour details</button></div>
+          </article>
+          <article class="tour-card" data-destination="Bohol" data-tags="nature countryside hills">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80" alt="Bohol countryside" loading="lazy">
+            <div class="tour-content"><div class="tour-meta">Bohol · 12 slots available</div><h3>Bohol Countryside Tour</h3><p>See the countryside's famous landscapes and local attractions on a relaxed guided day trip.</p><div class="tour-details"><span>18 Nov 2026 · 08:30</span><span>7 hours · Guided experience</span></div><div class="price">₱2,000 <span style="font-size:11px;font-weight:400;color:#7b8582">/ person</span></div><button class="btn btn-primary book-btn" type="button" data-tour="Bohol Countryside Tour" data-price="2000" data-slots="12">View tour details</button></div>
+          </article>
+          <article class="tour-card" data-destination="Boracay" data-tags="island sea beach nature">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="Boracay beach" loading="lazy">
+            <div class="tour-content"><div class="tour-meta">Boracay · 16 slots available</div><h3>Boracay Island Hopping</h3><p>Spend the day discovering beautiful coves and blue water around Boracay with a local guide.</p><div class="tour-details"><span>22 Nov 2026 · 09:00</span><span>5 hours · Boat tour</span></div><div class="price">₱1,500 <span style="font-size:11px;font-weight:400;color:#7b8582">/ person</span></div><button class="btn btn-primary book-btn" type="button" data-tour="Boracay Island Hopping" data-price="1500" data-slots="16">View tour details</button></div>
+          </article>
+          <article class="tour-card" data-destination="Manila" data-tags="culture museum history">
+            <img src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=900&q=80" alt="Museum and cultural visit" loading="lazy">
+            <div class="tour-content"><div class="tour-meta">Manila · 10 slots available</div><h3>Manila Museum Tour</h3><p>Discover art, heritage and stories of the Philippines through a curated museum visit.</p><div class="tour-details"><span>25 Nov 2026 · 10:00</span><span>3 hours · Guided experience</span></div><div class="price">₱500 <span style="font-size:11px;font-weight:400;color:#7b8582">/ person</span></div><button class="btn btn-primary book-btn" type="button" data-tour="Manila Museum Tour" data-price="500" data-slots="10">View tour details</button></div>
+          </article>
+        </div>
+        <p id="noResults" class="empty-message">No tours match your search. Try another destination or keyword.</p>
+      </section>
+
+      <section class="schedule-section" id="schedules">
+        <div class="section-heading">
+          <div class="section-kicker">Plan ahead, travel easy</div>
+          <h2>Schedules &amp; available slots</h2>
+          <p>View and manage tour schedules, prices, and available slots.</p>
+        </div>
+        <div class="schedule-toolbar">
+          <p class="management-note">Manage the sample tour schedule records below.</p>
+          <button class="btn btn-primary" id="addScheduleBtn" type="button">+ Add schedule</button>
+        </div>
+        <div class="schedule-list" id="scheduleList" aria-live="polite"></div>
+        <p id="emptySchedules" class="empty-message">No schedules yet. Select “Add schedule” to create one.</p>
+        <form id="scheduleForm" class="schedule-form" hidden>
+          <h3 id="scheduleFormTitle">Add a schedule</h3>
+          <input type="hidden" id="scheduleId">
+          <div class="management-fields">
+            <div class="field"><label for="scheduleTour">Tour name</label><input id="scheduleTour" required placeholder="e.g. Manila Heritage Tour"></div>
+            <div class="field"><label for="scheduleDestination">Destination</label><select id="scheduleDestination" required><option value="">Choose destination</option><option>Manila</option><option>Cebu</option><option>Bohol</option><option>Boracay</option><option>Palawan</option></select></div>
+            <div class="field"><label for="scheduleDate">Date</label><input id="scheduleDate" type="date" required></div>
+            <div class="field"><label for="scheduleTime">Departure time</label><input id="scheduleTime" type="time" required></div>
+            <div class="field"><label for="schedulePrice">Price per person (₱)</label><input id="schedulePrice" type="number" min="0" step="1" required></div>
+            <div class="field"><label for="scheduleSlots">Available slots</label><input id="scheduleSlots" type="number" min="0" step="1" required></div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" id="saveScheduleBtn">Save schedule</button>
+            <button class="btn" type="button" id="cancelScheduleBtn">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="brand" href="#home">isla<small>PHILIPPINES</small></a>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
